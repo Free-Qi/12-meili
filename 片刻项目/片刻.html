@@ -39,10 +39,17 @@
         }
 
         #nav {
+            position: fixed;
+            top:0;
+            left: 0;
             margin-bottom: 60px;
             width: 100%;
             height: 100px;
             background-color: white;
+            opacity: 0.9;
+            z-index: 1000000000000000000;
+            transition: all .8s;
+            overflow: hidden;
         }
 
         #logo {
@@ -134,6 +141,11 @@
             background-color: green;
             color: white;
         }
+        #placeholder {
+            width: 100%;
+            height: 150px;
+            opacity: 0.1;
+        }
 
         /*5个图片区域*/
         #img-5 {
@@ -146,7 +158,6 @@
         .center {
             width: 1002px;
             height: 100%;
-            border: 1px solid red;
             margin: auto;
             overflow: hidden;
             position: relative;
@@ -156,6 +167,7 @@
             width: 100%;
             height: 100%;
             transition: all .5s;
+
         }
 
         #bigimg {
@@ -186,6 +198,7 @@
             overflow: hidden;
             cursor: pointer;
         }
+
         .img_bottom {
             width: 100%;
             height: 85px;
@@ -197,7 +210,8 @@
             display: none;
 
         }
-        .text{
+
+        .text {
             font-size: 16px;
             color: white;
             position: absolute;
@@ -207,22 +221,25 @@
             overflow: hidden;
             transition: all 1.5s;
             display: none;
+            padding-top: 15px;
 
         }
 
         /*----------web-body------*/
         #web-body {
             width: 100%;
-            height: 800px;
+            min-height: 800px;
+            margin-bottom: 25px;
         }
+
         .body_head {
             width: 100%;
             height: 50px;
             margin-bottom: 20px;
-
             position: relative;
             overflow: hidden;
         }
+
         .black {
             width: 20px;
             height: 20px;
@@ -235,7 +252,8 @@
             vertical-align: middle;
 
         }
-        .head_text{
+
+        .head_text {
             text-align: center;
             width: 150px;
             margin-top: 15px;
@@ -245,6 +263,324 @@
             vertical-align: middle;
 
         }
+
+        .body_text {
+            width: 100%;
+            height: 250px;
+            margin-bottom: 30px;
+            background-color: white;
+            overflow: hidden;
+
+        }
+
+        .body_text_left {
+            width: 750px;
+            height: 100%;
+            float: left;
+            position: relative;
+            padding-left: 10px;
+            padding-top: 10px;
+        }
+
+        .body_text_left_top {
+            font-size: 28px;
+            cursor: pointer;
+            transition: all .2s;
+            font-weight: lighter;
+
+        }
+
+        .body_text_left_top:hover {
+            color: greenyellow;
+        }
+
+        .by {
+            font-size: 8px;
+            cursor: pointer;
+            transition: all .2s;
+            font-weight: lighter;
+
+        }
+
+        .by:hover {
+            color: greenyellow;
+        }
+
+        .byfather {
+            margin-left: 5px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        .lv {
+            color: greenyellow;
+            cursor: pointer;
+            margin-left: 20px;
+        }
+
+        .p {
+            color: rgb(118, 118, 109);
+            font-weight: lighter;
+            position: relative;
+        }
+
+        .text_foot {
+            position: absolute;
+            left: 5px;
+            bottom: 0px;
+            color: rgb(118, 118, 109);
+            height: 50px;
+            font-weight: lighter;
+        }
+
+        .body_img {
+            float: left;
+            width: 250px;
+            height: 250px;
+        }
+
+        .body_img img {
+            width: 100%;
+            height: 100%;
+        }
+
+
+        /*分割线3个图片*/
+        #three_img {
+            width: 100%;
+            height: 550px;
+            margin-bottom: 40px;
+        }
+        #totle3_img {
+            width: 100%;
+            height: 500px;
+            overflow: hidden;
+            position: relative;
+        }
+        .totle_one {
+            width: 310px;
+            height: 100%;
+            position: relative;
+            background-color: white;
+            display: inline-block;
+        }
+        .img_three {
+            width: 310px;
+            height: 310px;
+            overflow: hidden;
+            position: relative;
+        }
+        .img_three img {
+            width: 100%;
+            height: 100%;
+            transition: all .8s;
+        }
+
+
+        /*分割线--人气片刻*/
+        #hot_pinke {
+            width: 100%;
+            height: 550px;
+            margin-bottom: 50px;
+        }
+        #totle4_img {
+            width: 100%;
+            height: 300px;
+            position: relative;
+            overflow: hidden;
+        }
+        .totle4_one {
+            width: 220px;
+            height:230px;
+            background-color: white;
+            position: relative;
+            display: inline-block;
+        }
+        .red3 {
+            width: 0px;
+            height: 0px;
+            border-right: 20px solid rgb(225,105,109);
+            border-left: 20px solid rgb(239,239,239);
+            border-top: 20px solid rgb(239,239,239);
+            border-bottom: 20px solid rgb(239,239,239);
+            transform: rotate(45deg);
+            position: absolute;
+            left: -20px;
+            top: -20px;
+        }
+        .yuan {
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            left: 20px;
+            top: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        .yuan img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+        .yuan_right {
+            width: 100px;
+            height: 80px;
+            position: absolute;
+            left: 110px;
+            top: 70px;
+        }
+        .yuan_right_top {
+            font-size: 17px;
+            font-weight: bolder;
+            width: 100%;
+            height: 30px;
+            transition: all .2s;
+            cursor: pointer;
+        }
+        .yuan_right_top:hover {
+            color: greenyellow;
+        }
+        .yuan_right_bottom {
+            width: 100%;
+            height: 30px;
+            position: absolute;
+            bottom: 0;
+            font-weight: lighter;
+        }
+        .music {
+            background: url("img/music.png") no-repeat;
+            width: 47px;
+            height: 18px;
+            background-size: cover;
+            position: absolute;
+            left: 38px;
+            top:135px;
+            border-radius: 10px;
+        }
+        .more_father {
+            width: 180px;
+            height: 51px;
+            border-radius: 45px;
+            border: 1px solid rgb(161,207,169);
+            margin: 30px auto;
+
+        }
+        #more {
+            width: 172px;
+            height: 43px;
+            border-radius: 45px;
+            outline: none;
+            cursor: pointer;
+            border: none;
+            margin: 3px 3px;
+            background-color: rgb(103,177,114);
+
+        }
+        #more:hover {
+            background-color: rgb(72,161,85);
+        }
+
+        /*分割线--黑色底部*/
+        #blackfoot {
+            width: 100%;
+            height: 150px;
+            background-color: rgb(20,20,19);
+            position: relative;
+        }
+        .foot_left {
+            width: 500px;
+            height: 100px;
+            margin-top: 30px;
+            float: left;
+
+        }
+        #logo2 {
+            background: url("img/logo2.png");
+            width: 106px;
+            height: 57px;
+            background-size: contain;
+            display: inline-block;
+            cursor: pointer;
+        }
+        #logo2_right {
+            width: 380px;
+            height: 60px;
+            display: inline-block;
+            overflow: hidden;
+            position: relative;
+            margin-top: 10px;
+
+        }
+        #logo2_right span, #logo2_right p {
+            margin: 3px;
+            color: rgb(180,180,180);
+            cursor: pointer;
+            font-weight: inherit;
+            font-size: 10px;
+        }
+        #logo2_right span:hover{
+            color: white;
+        }
+        #foot_right {
+            width: 400px;
+            height: 100px;
+            margin-top: 30px;
+            float: right;
+
+        }
+        .foot_yuan {
+            border: 1px solid rgb(180,180,180);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-right: 25px;
+            display: inline-block;
+            position: relative;
+            cursor: pointer;
+        }
+        .foot_yuan:hover{
+            border: 1px solid white;
+        }
+        #logo3 {
+            background: url("img/logo3.png") no-repeat;
+            width: 100px;
+            height: 50px;
+            display: inline-block;
+            background-size: cover;
+            cursor: pointer;
+        }
+        #ewm {
+            width: 190px;
+            height: 190px;
+            position: absolute;
+            top: -223px;
+            left: -70px;
+            display: none;
+            transition: all .2s;
+            z-index: 1111111111111111111111;
+        }
+        #ewm img {
+            width: 100%;
+            height: 100%;
+        }
+        .yi {
+            width: 25px;
+            height: 2px;
+            background-color: white;
+            position: absolute;
+            left: 10px;
+            top:0px;
+        }
+        .clear {
+            clear: both;
+        }
+       /*#up {*/
+           /*border: 1px solid gray;*/
+           /*width: 80px;*/
+           /*height: 80px;*/
+           /*border-radius: 50;*/
+           /**/
+       /*}*/
 
 
     </style>
@@ -273,6 +609,7 @@
         </div>
     </div>
 </nav>
+<div id="placeholder"></div>
 <!--五个图片-->
 <div id="img-5">
     <div class="center">
@@ -280,35 +617,49 @@
             <img src="img/1.jpg" height="640" width="640"/>
             <div class="img_bottom">
             </div>
-            <footer class="text">这样锻炼,你才会掌握说话...</footer>
+            <footer class="text">
+                <div class="yi"></div>
+                这样锻炼,你才会掌握说话...
+            </footer>
         </div>
         <div id="img-5_right">
             <div class="img_five">
                 <img src="img/2.jpg" height="640" width="640"/>
                 <div class="img_bottom">
                 </div>
-                <footer class="text">有社交恐惧的你,该怎么克服这个困难?</footer>
+                <footer class="text">
+                    <div class="yi"></div>
+                    有社交恐惧的你,该怎么克服这个困难?
+                </footer>
 
             </div>
             <div class="img_five">
                 <img src="img/3.jpg" height="640" width="640"/>
                 <div class="img_bottom">
                 </div>
-                <footer class="text">怎么样找到,自己真正想做的事?</footer>
+                <footer class="text">
+                    <div class="yi"></div>
+                    怎么样找到,自己真正想做的事?
+                </footer>
 
             </div>
             <div class="img_five">
                 <img src="img/4.jpg" height="640" width="640"/>
                 <div class="img_bottom">
                 </div>
-                <footer class="text">坚持手写涨135天,生活将会改变</footer>
+                <footer class="text">
+                    <div class="yi"></div>坚持手写涨135天,生活将会改变
+                </footer>
 
             </div>
             <div class="img_five">
                 <img src="img/5.jpg" height="640" width="640"/>
                 <div class="img_bottom">
                 </div>
-                <footer class="text">外公的两条命</footer>
+                <footer class="text">
+                    <div class="yi"></div>
+                    外公的两条命
+                </footer>
 
             </div>
         </div>
@@ -323,42 +674,323 @@
             <div class="black"></div>
             <div class="head_text">阅读&nbsp|&nbspRead</div>
         </div>
+        <!--第一个-->
+        <div class="body_text">
+            <div class="body_text_left">
+                <div>
+                    <span class="body_text_left_top">飞鸿塔雪妮</span>
+                </div>
+                <div class="byfather">
+                    <span class="by">By / 失足少女七千</span>
+                </div>
+                <p class="p">
+                    1. “一个人挥刀的速度，不在于他有多恨那个人。” “有的人在挥刀之前，会犹豫不决。” “有的人发觉自己有些动摇时，反而更快地作出决定
+                    <span class="lv">VIEW ALL</span>
+                </p>
+                <footer class="text_foot">
+                    <span>1.5K次阅读&nbsp;&nbsp;|</span>
+                    <span>&nbsp;&nbsp;评论:10</span>
+                    <span>|&nbsp;&nbsp;喜欢:141</span>
+
+                </footer>
+
+            </div>
+            <div class="body_img">
+                <img src="img/gif.gif"/></div>
+        </div>
+        <!--第二个-->
+        <div class="body_text">
+            <div class="body_text_left">
+                <div>
+                    <span class="body_text_left_top">无痛人流</span>
+                </div>
+                <div class="byfather">
+                    <span class="by">By / 读行者-流冬</span>
+                </div>
+                <p class="p">
+                    假如刀刮掌纹是无痛的 假如剜除眼角的泪痣是无痛的 你不会在午夜的街头电话亭里对着话筒发呆 不会任由暴雨把仅有的皮鞋泡坏 不会像谋杀理想者一样，洗手洗
+                    <span class="lv">VIEW ALL</span>
+                </p>
+                <footer class="text_foot">
+                    <span>1.3K次阅读&nbsp;&nbsp;|</span>
+                    <span>&nbsp;&nbsp;评论:15</span>
+                    <span>|&nbsp;&nbsp;喜欢:77</span>
+
+                </footer>
+
+            </div>
+            <div class="body_img">
+                <img src="img/body2.jpg" height="233" width="176"/>
+            </div>
+
+        </div>
+        <!--第三个-->
+        <div class="body_text">
+            <div class="body_text_left">
+                <div>
+                    <span class="body_text_left_top">戏剧＋性≈戏剧性</span>
+                </div>
+                <div class="byfather">
+                    <span class="by">By / 阿帆哒</span>
+                </div>
+                <p class="p">
+                    此为“日记小说”系列。 A 小时候我们是好兄弟，长大后关系就疏远了。他加入了城里的黑社会，后来也不怎么回家，很少与我说话，没有再叫
+                    <span class="lv">VIEW ALL</span>
+                </p>
+                <footer class="text_foot">
+                    <span>1.2K次阅读&nbsp;&nbsp;|</span>
+                    <span>&nbsp;&nbsp;评论:10</span>
+                    <span>|&nbsp;&nbsp;喜欢:141</span>
+
+                </footer>
+
+            </div>
+            <div class="body_img">
+                <img src="img/body3.jpg" height="480" width="640"/>
+            </div>
+
+        </div>
 
     </div>
 </div>
 
 
+<!--三个视频-->
+<div id="three_img">
+    <div class="center">
+        <div class="body_head">
+            <div class="black"></div>
+            <div class="head_text">Ting</div>
+        </div>
+        <div id="totle3_img">
+            <!--第一个-->
+             <div class="totle_one">
+                 <div class="img_three">
+                     <img src="img/three1.jpg" height="300" width="300"/>
+                 </div>
+                 <div>
+                     <span class="body_text_left_top">把悲伤留给自己</span>
+                 </div>
+                 <div class="byfather">
+                     <span class="by">主播 / TingK</span>
+                 </div>
+                 <footer class="text_foot">
+                     <span>73.7K次播放&nbsp;&nbsp;|</span>
+                     <span>&nbsp;&nbsp;评论:77</span>
+                     <span>|&nbsp;&nbsp;喜欢:645</span>
+                 </footer>
+             </div>
+            <!--第二个-->
+            <div class="totle_one" style="margin-left: 29px;margin-right: 30px">
+                <div class="img_three">
+                    <img src="img/three2.jpg" height="300" width="300"/>
+                </div>
+                <div>
+                    <span class="body_text_left_top">「笑容」弹唱同期版</span>
+                </div>
+                <div class="byfather">
+                    <span class="by">主播 / 丁源</span>
+                </div>
+                <footer class="text_foot">
+                    <span>14.9K次播放&nbsp;&nbsp;|</span>
+                    <span>&nbsp;&nbsp;评论:41</span>
+                    <span>|&nbsp;&nbsp;喜欢:305</span>
+                </footer>
+            </div>
+            <!--第三个-->
+            <div class="totle_one">
+                <div class="img_three">
+                    <img src="img/three3.jpg" height="300" width="300"/>
+                </div>
+                <div>
+                    <span class="body_text_left_top">流夏 | 留下吧。</span>
+                </div>
+                <div class="byfather">
+                    <span class="by">主播 / 栗先达</span>
+                </div>
+                <footer class="text_foot">
+                    <span>46.2K次播放&nbsp;&nbsp;|</span>
+                    <span>&nbsp;&nbsp;评论:55</span>
+                    <span>|&nbsp;&nbsp;喜欢:616</span>
+                </footer>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!--人气片客-->
+<div id="hot_pinke">
+    <div class="center">
+        <div class="body_head" >
+            <div class="black"></div>
+            <div class="head_text" style="width: 180px">人气片客 | Hot Pianer</div>
+        </div>
+        <div id="totle4_img">
+            <!--第一个-->
+            <div class="totle4_one" style="margin-right: 33px">
+                <div class="red3"></div>
+                <div class="yuan">
+                    <img src="img/foot1.png.jpeg" height="90" width="90"/></div>
+                <div class="yuan_right">
+                    <div class="yuan_right_top">
+                        王睿 Ray
+                    </div>
+                    <div class="yuan_right_bottom">流行歌手王睿</div>
+                </div>
+                <div class="music"></div>
+            </div>
+            <!--第二个-->
+            <div class="totle4_one" style="margin-right: 33px">
+                <div class="red3"></div>
+                <div class="yuan">
+                    <img src="img/three2.jpg" height="300" width="300"/>
+                </div>
+                <div class="yuan_right">
+                    <div class="yuan_right_top">
+                        陆深兽
+                    </div>
+                    <div class="yuan_right_bottom">片刻翻唱达人陆深深</div>
+                </div>
+                <div class="music"></div>
+            </div>
+            <!--第三个-->
+            <div class="totle4_one" style="margin-right: 33px">
+                <div class="red3"></div>
+                <div class="yuan">
+                    <img src="img/foot3.jpeg" height="329" width="330"/></div>
+                <div class="yuan_right">
+                    <div class="yuan_right_top">
+                        阿见
+                    </div>
+                    <div class="yuan_right_bottom">独立音乐人，电台主持人。</div>
+                </div>
+                <div class="music"></div>
+            </div>
+            <!--第四个-->
+            <div class="totle4_one">
+                <div class="red3"></div>
+                <div class="yuan">
+                    <img src="img/foot4.jpeg" height="329" width="330"/></div>
+                <div class="yuan_right">
+                    <div class="yuan_right_top">
+                        贤菌
+                    </div>
+                    <div class="yuan_right_bottom">靠脸吃饭，臭不要脸！</div>
+                </div>
+                <div class="music"></div>
+            </div>
+
+        </div>
+        <div class="more_father">
+            <button id="more">查看更多精彩内容</button>
+        </div>
+
+    </div>
+</div>
+
+<!--黑色底部-->
+<div id="blackfoot">
+    <div class="contain" style="overflow: visible">
+        <div class="foot_left">
+            <div id="logo2"></div>
+            <div id="logo2_right">
+                <span>关于我们</span>
+                <span>友情链接</span>
+                <span>片刻帮助</span>
+                <span>成长记忆</span>
+                <span>意见反馈</span>
+                <p>All rights reserved © 2016 pianke.me /蜀ICP备12022689号-1</p>
+            </div>
+        </div>
+        <div id="foot_right">
+            <div class="foot_yuan"></div>
+            <div class="foot_yuan"></div>
+            <div class="foot_yuan">
+                <div id="ewm">
+                    <img src="img/2wm.png" height="193" width="192"/>
+                </div>
+            </div>
+            <div id="logo3"></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+</div>
+
+<div id="up">
+    <div id="up-3"></div>
+</div>
+
 
 <script>
-     $(function () {
+    $(function () {
 //         大图片鼠标移入
-         $("#bigimg").on("mouseover",function () {
-             $("#bigimg").children().eq(0).css("transform","scale(1.2)");
-             $("#bigimg").children().eq(1).css("display","block");
-             $("#bigimg").children().eq(2).css("display","block");
-         });
-         //         大图片鼠标移除
-         $("#bigimg").on("mouseout",function () {
-             $("#bigimg").children().css("transform","scale(1)");
-             $("#bigimg").children().eq(1).css("display","none");
-             $("#bigimg").children().eq(2).css("display","none");
-         })
-         $(".img_five").on("mouseover",function () {
-             $(this).children().eq(0).css("transform","scale(1.2)");
-             $(this).children().eq(1).css("display","block");
-             $(this).children().eq(2).css("display","block");
-         })
-         $(".img_five").on("mouseout",function () {
-             $(this).children().eq(0).css("transform","scale(1)");
-             $(this).children().eq(1).css("display","none");
-             $(this).children().eq(2).css("display","none");
-         })
-         
-         
-         
-         
-     })
- 
+        $("#bigimg").on("mouseover", function () {
+            $("#bigimg").children().eq(0).css("transform", "scale(1.2)");
+            $("#bigimg").children().eq(1).css("display", "block");
+            $("#bigimg").children().eq(2).css("display", "block");
+        });
+        //         大图片鼠标移除
+        $("#bigimg").on("mouseout", function () {
+            $("#bigimg").children().css("transform", "scale(1)");
+            $("#bigimg").children().eq(1).css("display", "none");
+            $("#bigimg").children().eq(2).css("display", "none");
+        })
+        $(".img_five").on("mouseover", function () {
+            $(this).children().eq(0).css("transform", "scale(1.2)");
+            $(this).children().eq(1).css("display", "block");
+            $(this).children().eq(2).css("display", "block");
+        })
+        $(".img_five").on("mouseout", function () {
+            $(this).children().eq(0).css("transform", "scale(1)");
+            $(this).children().eq(1).css("display", "none");
+            $(this).children().eq(2).css("display", "none");
+        })
+
+//        底下鼠标移入移出
+//        先移入
+        $(".img_three").on("mouseover",function () {
+            $(this).children().css("transform","scale(1.2)")
+        })
+//        移出
+        $(".img_three").on("mouseout",function () {
+            $(this).children().css("transform","scale(1)")
+        });
+//        移入显示二维码
+        $("#foot_right").children().eq(2).on("mouseover",function () {
+            $("#ewm").css("display","block");
+
+        });
+        //        移出隐藏二维码
+        $("#foot_right").children().eq(2).on("mouseout",function () {
+            $("#ewm").css("display","none");
+        });
+
+        
+      
+        
+        
+//        滚轮事件
+        var initTop = 0;
+        $(window).scroll(function(){
+            var scrollTop = $(document).scrollTop();
+            console.log(scrollTop);
+            if(scrollTop>=75){
+                if(scrollTop > initTop){
+                   $("#nav").css("height","0px")
+                } else {
+                    $("#nav").css("height","100px")
+                }
+                initTop = scrollTop;
+            }
+        });
+
+
+
+
+    })
+
 </script>
 
 </body>
